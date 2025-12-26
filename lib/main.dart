@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_workspace/basic/count_screen.dart';
 import 'package:flutter_workspace/basic/for_screen.dart';
 import 'package:flutter_workspace/basic/if_screen.dart';
+import 'package:flutter_workspace/basic/while_screen.dart';
 import 'package:flutter_workspace/screens/main_screen.dart';
 import 'package:go_router/go_router.dart';
 
@@ -62,10 +64,15 @@ final GoRouter _router = GoRouter(
               나중에는 id 값이나 로그인한 데이터 값을 담을 수 있다.
               state.params['id'] 과 같은 형태로 변형하여 사용
      */
+  /*
+  * GoRoute 설정을 진행하면 프로젝트를 다시 시작해야한다.
+  * */
   routes: [
     GoRoute(path: "/", builder: (context, state) => const MainScreen()),
     GoRoute(path: "/if", builder: (context, state) => const IfScreen()),
     GoRoute(path: "/for", builder: (context, state) => const ForScreen()),
+    GoRoute(path: "/count", builder: (context, state) => const CountScreen()),
+    GoRoute(path: "/while", builder: (context, state) => const WhileScreen()),
   ],
 );
 
