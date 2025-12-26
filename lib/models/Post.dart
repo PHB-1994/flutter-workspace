@@ -94,7 +94,7 @@ class Post {
       postLocation: json['postLocation'],
       createdAt: json['createdAt'],
       userName: json['userName'],
-      userFullname: json['userFullname'],
+      userFullname: json['userFullname'] != null ? json['userFullname'] : '',
       userAvatar: json['userAvatar'],
       likeCount: json['likeCount'],
       commentCount: json['commentCount'],
