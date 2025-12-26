@@ -7,12 +7,11 @@ class PostCard extends StatelessWidget {
 
   PostCard({required this.post});
 
-
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        PostImge(post: post),
+        PostImage(post: post),
         Divider(), // 게시물마다 실선으로 분류
       ],
     );
